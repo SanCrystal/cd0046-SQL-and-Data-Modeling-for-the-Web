@@ -109,7 +109,6 @@ def index():
    "venues": [{"id": venues[i].id, "name": venues[i].name,"image_link":venues[i].image_link} for i in range(len(venues))],
    "artists": [{"id": artists[i].id, "name": artists[i].name,"image_link":artists[i].image_link} for i in range(len(artists))]
   }
-  print(data)
   return render_template('pages/home.html',data= data)
 
 
