@@ -196,7 +196,7 @@ class ArtistForm(Form):
         'phone'
     )
     image_link = StringField(
-        'image_link'
+        'image_link',validators=[DataRequired()]
     )
     genres = SelectMultipleField(
         'genres', validators=[DataRequired()],
@@ -220,6 +220,18 @@ class ArtistForm(Form):
             ('Rock n Roll', 'Rock n Roll'),
             ('Soul', 'Soul'),
             ('Other', 'Other'),
+            ('Techno','Techno'),
+            ('Disco','Disco'),
+            ('Ambient','Ambient'),
+            ('Industrial','Industrial'),
+            ('Gospel','Gospel'),
+            ('Trance','Trance'),
+            ('Dubstep','Dubstep'),
+            ('Breakbeat','Breakbeat'),
+            ('Ska','Ska'),
+            ('Orchestra','Orchestra'),
+            ('New Wave','New Wave'),
+            ('Grunge','Grunge'),
         ]
      )
     facebook_link = StringField(

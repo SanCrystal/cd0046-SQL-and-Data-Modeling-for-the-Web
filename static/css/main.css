@@ -209,3 +209,24 @@ h2.monospace {
 .subtitle {
   opacity: 0.5;
 }
+
+.r-container {
+	display: flex;
+	margin-top: 1em;
+  justify-content: space-around;
+}
+.artist,.venue{
+	width: 25em;
+    height: 6em;
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 1em;
+}
+.artist img,.venue img{
+	width: 80%;
+	height: 100%;
+}
+.recently-listed{
+  text-align: center;
+  margin: 2em ;
+}
